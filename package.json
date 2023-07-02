@@ -5,6 +5,7 @@
   },
   "scripts": {
     "start": "node ./dist/Bot.js",
-    "test": "node --inspect ./dist/Bot.js"
+    "test": "node --inspect ./dist/Bot.js",
+    "prestart": "tsc -p ./tsconfig.json"
   }
 }
