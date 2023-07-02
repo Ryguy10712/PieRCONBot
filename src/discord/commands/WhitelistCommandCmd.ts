@@ -12,7 +12,7 @@ export class WhitelistCmdCmd extends Command
     constructor(bot: RCONBot)
     {
         super()
-        this.inDev = true;
+        this.inDev = false;
         this.subcommands = null
 
         this.setName("whitelist_commnad")

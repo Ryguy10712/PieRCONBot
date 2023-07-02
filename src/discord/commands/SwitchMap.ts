@@ -12,7 +12,7 @@ export class SwitchMapCmd extends Command
     {
         super()
         this.subcommands = null;
-        this.inDev = true;
+        this.inDev = false;
         this.setName("switchmap")
         this.setDescription("switches the map and gamemode")
 

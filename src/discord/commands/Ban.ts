@@ -12,7 +12,7 @@ export class BanCmd extends Command
     constructor()
     {
         super()
-        this.inDev = true
+        this.inDev = false
         this.subcommands = null;
         this.setName("ban")
         this.setDescription("bans a player from the server")

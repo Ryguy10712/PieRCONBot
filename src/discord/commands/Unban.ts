@@ -12,7 +12,7 @@ export class UnbanCmd extends Command
     constructor()
     {
         super()
-        this.inDev = true
+        this.inDev = false
         this.subcommands = null;
         this.setName("unban")
         this.setDescription("unbans a player from the server")

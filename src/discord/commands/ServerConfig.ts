@@ -13,7 +13,7 @@ export class ServerCfgCmd extends Command
     constructor()
     {
         super()
-        this.inDev = true;
+        this.inDev = false;
         this.subcommands = null;
 
         this.setName("server_config")

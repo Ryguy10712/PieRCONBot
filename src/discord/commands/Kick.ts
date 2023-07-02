@@ -10,7 +10,7 @@ export class KickCmd extends Command
     constructor()
     {
         super()
-        this.inDev = true
+        this.inDev = false
         this.subcommands = null;
         this.setName("kick")
         this.setDescription("kicks a player from the server")

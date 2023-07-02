@@ -10,7 +10,7 @@ export class AddModCmd extends Command
     constructor()
     {
         super()
-        this.inDev = true
+        this.inDev = false
         this.subcommands = null;
 
         this.setName("add_mod")
