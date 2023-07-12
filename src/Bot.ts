@@ -102,7 +102,7 @@ export class RCONBot
             if(inDevBody.length >= 1)
             {
                 await rest.put(
-                    Routes.applicationGuildCommands(process.env.APPLICATION_ID!, process.env.TESTING_GUILD_ID!),
+                    Routes.applicationGuildCommands(this.client.application!.id, process.env.TESTING_GUILD_ID!),
                     {headers: auth, body: inDevBody}
                 )
             }
@@ -110,7 +110,7 @@ export class RCONBot
             if(cmdBody.length >= 1)
             {
                 await rest.put(
-                    Routes.applicationCommands(process.env.APPLICATION_ID!),
+                    Routes.applicationCommands(this.client.application?.id!),
                     {body: cmdBody}
                 )
             }
